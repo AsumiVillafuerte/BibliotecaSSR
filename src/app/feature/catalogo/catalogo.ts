@@ -79,6 +79,8 @@ export class CatalogoComponent implements OnInit {
   }
 
   verDetalle(id: number) {
-    this.router.navigate(['/detalle', id]);  // Redirige a la ruta de detalle del libro
+    // ✅ Ahora redirige con query params en lugar de ruta dinámica
+    this.router.navigate(['/detalle'], { queryParams: { id } });
   }
 }
+

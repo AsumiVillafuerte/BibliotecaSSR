@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { Inicio } from './feature/inicio/inicio';  // Asegúrate de que el nombre del componente sea correcto
 import { Nosotros } from './feature/nosotros/nosotros';  // Asegúrate de que el nombre del componente sea correcto
 import { CatalogoComponent } from './feature/catalogo/catalogo';  // Asegúrate de que el nombre sea correcto
-import { DetalleComponent } from './feature/detalles/detalles';  // Ruta para el detalle de un libro/producto
+import { DetallesComponent } from './feature/detalles/detalles';  // Ruta para el detalle de un libro/producto
 
 export const routes: Routes = [
   {
@@ -18,8 +18,8 @@ export const routes: Routes = [
     component: CatalogoComponent  // Componente para el catálogo
   },
   {
-    path: 'detalle/:id',  // Ruta dinámica para el detalle de un libro/producto
-    component: DetalleComponent  // Componente de detalles
+    path: 'detalle',  // Ruta dinámica para el detalle de un libro/producto
+    component: DetallesComponent // Componente de detalles
   },
   {
     path: '',  // Redirección al home cuando no se encuentra una ruta válida
