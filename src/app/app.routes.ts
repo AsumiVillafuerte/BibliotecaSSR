@@ -1,29 +1,30 @@
 import { Routes } from '@angular/router';
-import { Inicio } from './feature/inicio/inicio';  // Asegúrate de que el nombre del componente sea correcto
-import { Nosotros } from './feature/nosotros/nosotros';  // Asegúrate de que el nombre del componente sea correcto
-import { CatalogoComponent } from './feature/catalogo/catalogo';  // Asegúrate de que el nombre sea correcto
-import { DetallesComponent } from './feature/detalles/detalles';  // Ruta para el detalle de un libro/producto
+import { Inicio } from './feature/inicio/inicio';  
+import { Nosotros } from './feature/nosotros/nosotros';  
+import { CatalogoComponent } from './feature/catalogo/catalogo';  
+import { DetallesComponent } from './feature/detalles/detalles';  
 
 export const routes: Routes = [
   {
-    path: 'home',  // Ruta de inicio
-    component: Inicio  // Componente de inicio
+    path: 'home',  
+    component: Inicio  
   },
   {
-    path: 'nosotros',  // Ruta de nosotros
-    component: Nosotros  // Componente de nosotros
+    path: 'nosotros', 
+    component: Nosotros  
   },
   {
-    path: 'catalogo',  // Ruta para el catálogo de libros
-    component: CatalogoComponent  // Componente para el catálogo
+    path: 'catalogo', 
+    component: CatalogoComponent  
   },
   {
-    path: 'detalle',  // Ruta dinámica para el detalle de un libro/producto
-    component: DetallesComponent // Componente de detalles
+    path: 'detalle',  
+    component: DetallesComponent 
   },
   {
-    path: '',  // Redirección al home cuando no se encuentra una ruta válida
+    path: '',  
     redirectTo: 'home',
     pathMatch: 'full'
   },
 ];
+
